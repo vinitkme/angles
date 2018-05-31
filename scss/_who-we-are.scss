@@ -1,0 +1,55 @@
+.who-we-are-container{
+  text-align:center;
+}
+.four-box-section{
+  padding: 81px 0 25px;
+  @media screen and (max-width: $break-small) {
+    padding: 20px 0px;
+  }
+}
+.who-we-are-text{
+  padding:0 150px;
+  @media screen and (max-width: $break-small) {
+    padding:0px;
+  }
+}
+.who-we-are-boxes{
+    padding: 15px 15px 20px;
+    position: relative;
+    z-index: 1;
+  i{
+    font-size: 44px;
+    color: #3a9ac8;
+    margin-bottom: 20px;
+    transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+  }
+  &:after {
+    content: '';
+    background: #3a9ac8;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+  }
+  &:hover{
+    h6{
+      color:#fff;
+      transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+    }
+    p{
+      color:#fff;
+      transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+    }
+    i{ 
+      color:#fff;
+      transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+    }
+    &:after{
+      transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+      height: 100%;
+    }
+  }
+}

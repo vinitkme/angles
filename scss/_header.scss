@@ -1,0 +1,202 @@
+/******************* Header Start **********************/
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 2222;
+  .width-100 {
+    max-width: 100rem !important;
+  }
+  .logo {
+    display: table;
+    height: 85px;
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      a {
+        img {
+          max-height: 48px;
+        }
+      }
+    }     
+  }
+  .navigation-bar {
+    float: right;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      li {
+        float: left;
+        height: 90px;
+        @media only screen and (max-width: 639px) {
+          float: none;
+        }
+        &:last-child {
+          a {
+            &:hover {
+              background: transparent;
+              color: #fff;
+              text-decoration: none;
+              -webkit-transition:0.3s all ease;
+              transition:0.3s ease all;          
+            }
+            &:focus {
+              outline: 0;         
+            }                        
+          }
+        }  
+        a {
+          color: #fff;
+          padding: 0 22px;
+          display: block;
+          line-height: 97px;
+          text-transform: capitalize;
+          &.active {
+            background: #3a9ac8;
+            color: #fff;
+            text-decoration: none;
+            border-right: 1px solid #000;
+          }
+          &:hover {
+            background: #3a9ac8;
+            color: #fff;
+            text-decoration: none;
+            -webkit-transition:0.3s all ease;
+            transition:0.3s ease all;          
+          }     
+        }
+      } 
+    }
+  }
+  .header-search-bar {
+    float: right;
+    height: 91px;
+    padding-top: 27px;
+    padding-left: 15px;    
+    @media only screen and (max-width: 1023px) {
+      padding-top: 23px;
+    }    
+    a {
+      font-size: 26px; 
+      position: relative;
+      left: -10px;
+      top: 5px; 
+      @media only screen and (max-width: 1023px) {
+        left: -30px;
+      }      
+    }
+    .header-search-open {
+      display: none;
+    }    
+  } 
+  .right-vertical-menus {
+    .button {
+      padding: 0.60em 0.70em;
+      border-radius: 50%;
+      i {
+        font-size: 1.4rem;
+      }          
+    }
+  }
+  .vertical-menus-right { 
+    &.off-canvas {
+      background: #fff !important;
+    } 
+    .close-button {
+      color: #fff;
+      background: #6cb4d6;
+      padding: 5px 12px;
+      border-radius: 50%;
+    } 
+    ul {
+      width:100%;
+      li {
+        height:auto;
+        a {
+          line-height: 46px;
+          padding: 0.4rem 1rem !important;
+        }
+
+      }
+    }
+    .logo-img {
+      width: 140px;
+    }  
+  }        
+}
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+  border-color: #fff transparent transparent !important;
+}
+.search-popup {
+  width: 900px !important;
+  max-width: 100%;
+  background: transparent !important;
+  border:0px !important;
+  .foundation-search-bar {
+    margin-top: 30px; 
+    .input-group-field {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid #fff;
+      border-radius: 0px;
+      font-size: 40px;
+      color: #fff;
+      &:focus {
+        box-shadow: none;
+      }
+    } 
+    .input-group-button {
+      a {
+        padding: 10px;
+        i {
+          color: #fff;
+          position: relative;
+          top: 10px;
+          left: -40px;
+        }
+      }
+    }  
+  }
+  .close-button {
+    position: absolute;
+    top: 0px !important;
+    border: 2px solid #fff;
+    border-radius: 50% !important;
+    padding: 1px 7px;
+    color: #fff !important;  
+    &:hover {
+      color: #fff !important;
+    }
+    &:focus {
+      color: #fff !important;
+    }
+  }  
+}
+.clear {
+	clear:both;
+}
+.reveal-overlay {
+  background-color: rgba(10, 10, 10, 0.9) !important;
+  z-index: 999999 !important;
+}
+
+/******************* Header End **********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

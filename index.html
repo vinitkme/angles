@@ -1,0 +1,367 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Drupal Theme</title>
+    <link rel="stylesheet" href="css/foundation.css">    
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/custom-app.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  </head>
+  <body> 
+<header>
+  <div class="row width-100">
+    <div class="column small-4 medium-2 large-2">
+      <div class="logo">
+        <span>
+          <a href="#"><img src="images/logo.png"></a>
+        </span>
+      </div> 
+    </div>
+    <!-- End logo -->
+    <div class="column small-8 medium-10 large-10">
+      <!-- main Navigation -->
+      <nav class="navigation">
+        <div class="navigation-bar">
+          <ul class="hide-for-small-only hide-for-medium-only">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a data-toggle="animatedModal10"><i class="fas fa-lg fa-search"></i></a></li>
+          </ul>
+          <div class="header-search-bar">               
+            <div class="right-vertical-menus float-right">
+              <button type="button" class="button" data-toggle="offCanvasRight1">
+                <i class="fas fa-bars fa-2x"></i>
+              </button>
+            </div>
+          </div>
+          <div class="reveal search-popup" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in" data-animation-out="spin-out">
+            <div class="foundation-search-bar">
+              <div class="input-group">
+                <input class="input-group-field" type="text" placeholder="Search Here...">
+                <div class="input-group-button">
+                  <a href="#" class=""><i class="fa fa-2x fa-search"></i></a>
+                </div>
+              </div>
+            </div>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>          
+          <!-- Verticle Menus -->          
+            <div class="off-canvas-wrapper off-canvas-right-wrapper">
+              <div class="off-canvas vertical-menus-right position-right" id="offCanvasRight1" data-off-canvas>
+                <ul class="vertical menu" data-responsive-menu="drilldown medium-accordion">
+                <button class="close-button float-right" aria-label="Close menu" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                  <li class="text-center menus-logo">
+                    <a href="#"><img src="images/logo.png" alt="logo" class="logo-img"></a>
+                  </li>
+                  <li>
+                    <a href="#">Item 1</a>
+                    <ul class="vertical menu">
+                      <li>
+                        <a href="#">Item 1A</a>
+                        <ul class="vertical menu">
+                          <li><a href="#">Item 1A</a></li>
+                          <li><a href="#">Item 1B</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Item 1B</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Item 2</a>
+                    <ul class="vertical menu">
+                      <li><a href="#">Item 2A</a></li>
+                      <li><a href="#">Item 2B</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Item 3</a>
+                    <ul class="vertical menu">
+                      <li><a href="#">Item 3A</a></li>
+                      <li><a href="#">Item 3B</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Item 4</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Verticle Menus -->
+          </div>
+        </nav>                   
+      </div>         
+      <!-- End main Navigation -->
+  </div>     
+</header>
+<!-- Header End -->
+<div class="clear"></div>
+<!-- Banner Start -->
+<section>
+  <div class="slider-wrapper">
+    <div class="slider-inner home-slider">
+      <div class="fullscreen-image-slider">
+        <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
+          <ul class="orbit-container">
+            <button class="orbit-previous">
+              <span class="show-for-sr">Previous Slide</span>
+              <span class="nav fa fa-chevron-left fa-2x"></span>
+            </button>
+            <button class="orbit-next">
+              <span class="show-for-sr">Next Slide</span>
+              <span class="nav fa fa-chevron-right fa-2x"></span>
+            </button>
+            <li class="is-active orbit-slide">
+              <img class="orbit-image" src="https://i.imgur.com/16z9ObN.jpg" alt="Space">
+              <figcaption class="orbit-caption wow bounceInUp">
+                <h1>Lorem ipsum dolor sit amet, </h1>
+                <p>consectetur adipisicing elit.</p>
+                <a href="#" class="button">Lorem Ipsum</a>
+              </figcaption>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="https://i.imgur.com/JD4Caxa.jpg" alt="Space">
+              <figcaption class="orbit-caption wow bounceInUp">
+                <h1>Lorem ipsum dolor sit amet, </h1>
+                <p>consectetur adipisicing elit.</p>
+                <a href="#" class="button">Lorem Ipsum</a>
+              </figcaption>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="https://i.imgur.com/rsTQbNV.jpg" alt="Space">
+              <figcaption class="orbit-caption wow bounceInUp">
+                <h1>Lorem ipsum dolor sit amet, </h1>
+                <p>consectetur adipisicing elit.</p>
+                <a href="#" class="button">Lorem Ipsum</a>
+              </figcaption>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clear"></div>
+<section>
+  <div class="row">
+    <div class="column">
+      <div class="who-we-are-container section">
+        <div class="row">
+          <div class="small-12 column">
+            <div class="who-we-are-text">          
+              <h2>Who We Are</h2>
+              <h4>WE ARE CORPORATE WEB AGENCY</h4>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div class="four-box-section">
+              <div class="row"> 
+                  <div class="small-12 medium-6 large-3  column">
+                    <div class="who-we-are-boxes">  
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                      <h6>Fully Responsive</h6>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 large-3 column">
+                    <div class="who-we-are-boxes">  
+                      <i class="fa fa-eye" aria-hidden="true"></i>
+                      <h6>Fully Responsive</h6>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 large-3 column">
+                    <div class="who-we-are-boxes">  
+                      <i class="fas fa-cog"></i>
+                      <h6>Fully Responsive</h6>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 large-3 column">
+                    <div class="who-we-are-boxes">  
+                      <i class="fa fa-code" aria-hidden="true"></i>
+                      <h6>Fully Responsive</h6>
+                      <p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                    </div>
+                  </div>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clear"></div>
+<section>
+  <div class="row fullWidth">
+    <div class="column">
+      <div class="row">
+        <div class="small-12 medium-6 large-6 column blue-bg">
+          <div class="why-choose-use-left">
+            <h2>Why Choose us</h2>            
+            <div class="why-choose-use-content">
+              <div class="row">
+                <div class="column shrink">
+                  <div class="why-choose-icon">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="why-choose-content">
+                      <h3>24X7 Customer Support</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="why-choose-use-content">
+              <div class="row">
+                <div class="column shrink">
+                  <div class="why-choose-icon">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="why-choose-content">
+                    <h3>150+ Video Courses</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="why-choose-use-content">
+              <div class="row">
+                <div class="column shrink">
+                  <div class="why-choose-icon">
+                    <i class="far fa-smile"></i>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="why-choose-content">
+                    <h3>12 Years of Experience</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="small-12 medium-6 large-6 column padding-both-none">
+          <div class="why-choose-use-right"></div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clear"></div>
+<section>
+  <div class="row">
+    <div class="column">
+      <div class="services-container section">
+        <div class="heading-section">
+          <h2>Our Services</h2>
+          <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div class="row">
+          
+          <div class="small-12 medium-6 large-4 column">
+            <div class="service-box">
+              <i class="fab fa-android"></i>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 column">
+            <div class="service-box">
+              <i class="fab fa-android"></i>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 column">
+            <div class="service-box">
+              <i class="fab fa-android"></i>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 column">
+            <div class="service-box">
+              <i class="fab fa-android"></i>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 column">
+            <div class="service-box">
+              <i class="fab fa-android"></i>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 column">
+            <div class="service-box">
+              <i class="fab fa-android"></i>
+              <h3>Web Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clear"></div>
+<section class="stats-bg bg-dark">
+  <div class="row">
+    <div class="column">
+      <div class="stats-container section">
+        <div class="row">
+          
+          <div class="small-12 medium-6 large-4 column">
+            <div class="stats-cont-box">
+              <span class="stats-counts">432</span>
+              Project Complete
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 column">
+            <div class="stats-cont-box">
+              <span class="stats-counts">75</span>
+              Happy Clients
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4 column">
+            <div class="stats-cont-box">
+              <span class="stats-counts">32</span>
+              Awards Received
+            </div>
+          </div>
+
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
