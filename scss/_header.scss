@@ -120,7 +120,31 @@ header {
         a {
           line-height: 46px;
           padding: 0.4rem 1rem !important;
+          font-size: 18px;
+          color: #737373;
+          font-weight: 500;
+          text-align: left;
+          &:hover {
+            color: #3a9ac8;
+            background: transparent;
+            text-decoration: none;
+            -webkit-transition:0.3s all ease;
+            transition:0.3s ease all;          
+          }          
         }
+        &:last-child {
+          a {
+            &:hover {
+              color: #3a9ac8;
+              text-decoration: none;
+              -webkit-transition:0.3s all ease;
+              transition:0.3s ease all;          
+            }
+            &:focus {
+              outline: 0;         
+            }                        
+          }
+        }        
 
       }
     }
@@ -130,7 +154,7 @@ header {
   }        
 }
 .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
-  border-color: #fff transparent transparent !important;
+  border-color: #737373 transparent transparent;
 }
 .search-popup {
   width: 900px !important;
@@ -184,6 +208,9 @@ header {
   background-color: rgba(10, 10, 10, 0.9) !important;
   z-index: 999999 !important;
 }
+
+
+
 
 /******************* Header End **********************/
 

@@ -1,19 +1,23 @@
-.stats-bg{
-   background: url(../images/counters-bg.jpg) no-repeat 50% 0;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
+.stats-bg {
+  background: url(../images/counters-bg.jpg) no-repeat 50% 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.stats-cont-box{
+.stats-cont-box {
   text-align: center;
   font-size: 18px;
   color: #bcbcbd;
-  .stats-counts{
+  .stats-counts {
     font-weight: 600;
     display: block;
     font-size: 66px;
     line-height: 1.2;
     color: #fff;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
   }
 }
