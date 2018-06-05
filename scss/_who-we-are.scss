@@ -1,31 +1,37 @@
-.who-we-are-container{
+.who-we-are-container {
   text-align:center;
+  h4 {
+    color: $heading-dark-color;
+  }  
 }
-.four-box-section{
-  padding: 81px 0 25px;
+.four-box-section {
+  padding: 0px;
   @media screen and (max-width: $break-small) {
     padding: 20px 0px;
   }
 }
-.who-we-are-text{
+.who-we-are-text {
   padding:0 150px;
   @media screen and (max-width: $break-small) {
     padding:0px;
   }
 }
-.who-we-are-boxes{
-    padding: 15px 15px 20px;
-    position: relative;
-    z-index: 1;
-  i{
+.who-we-are-boxes {
+  padding: 15px 15px 20px;
+  position: relative;
+  z-index: 1;
+  i {
     font-size: 44px;
     color: #3a9ac8;
     margin-bottom: 20px;
     transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
   }
+  h6 {
+    color:$heading-light-dark-color;    
+  }
   &:after {
     content: '';
-    background: #3a9ac8;
+    background: $bg-secondary-color;
     left: 0;
     right: 0;
     bottom: 0;
@@ -34,20 +40,20 @@
     z-index: -1;
     transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
   }
-  &:hover{
+  &:hover {
     h6{
-      color:#fff;
+      color:$heading-light-color;
       transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
     }
     p{
-      color:#fff;
+      color:$pargraph-light-color;
       transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
     }
     i{ 
       color:#fff;
       transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
     }
-    &:after{
+    &:after {
       transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
       height: 100%;
     }

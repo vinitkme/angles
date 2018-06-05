@@ -1,5 +1,60 @@
+/*==============================================
+Variables CSS
+================================================*/
+$font-color-dark: #000;
+$font-color-light-dark: #737373;
+$font-color-light: #fff;
+$font-color-secondary: #3a9ac8;
+
+$dark-bg-primary-text-color: #fff;
+$dark-bg-secondary-text-color: #3a9ac8;
+
+$button-dark-bg: #000;
+$button-light-dark-color: #737373;
+$button-light-bg: #fff;
+$button-secondary-bg: #3a9ac8;
+
+$bg-dark-color: #000;
+$bg-light-dark-color: #737373;
+$bg-light-color: #fff;
+$bg-secondary-color: #3a9ac8;
+
+$a-dark-color: $font-color-dark;
+$a-light-dark-color: $font-color-light-dark;
+$a-light-color: $font-color-light;
+$a-secondary-color: $font-color-secondary;
+
+$button-dark-color: $font-color-dark;
+$button-light-dark-color: $font-color-light-dark;
+$button-light-color: $font-color-light;
+$button-secondary-color: $font-color-secondary;
+
+$heading-dark-color: $font-color-dark;
+$heading-light-dark-color: $font-color-light-dark;
+$heading-light-color: $font-color-light;
+$heading-secondary-color: $font-color-secondary;
+
+$input-dark-color: $font-color-dark;
+$input-light-dark-color: $font-color-light-dark;
+$input-light-color: $font-color-light;
+$input-secondary-color: $font-color-secondary;
+
+$pargraph-dark-color: $font-color-dark;
+$pargraph-light-dark-color: $font-color-light-dark;
+$pargraph-light-color: $font-color-light;
+$pargraph-secondary-color: $font-color-secondary;
+
+$span-dark-color: $font-color-dark;
+$span-light-dark-color: $font-color-light-dark;
+$span-light-color: $font-color-light;
+$span-secondary-color: $font-color-secondary;
+
+/*==============================================
+Variables CSS
+================================================*/
+
 html{
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -25,7 +80,6 @@ img {
   border: 0;
   max-width: 100%;
 }
-
 a {
   color: #3a9ac8;
   text-decoration: none;
@@ -64,58 +118,45 @@ p {
   margin: 0 0 15px;
 }
 
+@function headings($from:1, $to:6) {
+    @if $from == $to {
+        @return 'h#{$from}';
+    } @else {
+        @return 'h#{$from},' + headings($from+1, $to);
+    }
+}
 
-h1{
+#{headings(1,6)} {
   line-height: 1.3;
   margin: 0 0 15px;
   font-weight: 700;
-  color: #fff;
+  color: $heading-light-color;
   font-family: 'Roboto', sans-serif;
+}
+
+h1{
   font-size: 3rem;  
 } 
 h2 {
-  line-height: 1.3;
-  margin: 0 0 15px;
   font-weight: 700;
-  color: #242424;
-  font-family: 'Roboto', sans-serif;
   font-size: 3rem;
 }
 h3 {
-  line-height: 1.3;
-  margin: 0 0 15px;
-  color: #242424;
-  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 600;
 }
 h4 {
-  line-height: 1.3;
-  margin: 0 0 15px;
-  color: #242424;
-  font-family: 'Roboto', sans-serif;
   font-size: 1.60rem;
   font-weight: 600;
 }
 h5 {
-  line-height: 1.3;
-  margin: 0 0 15px;
-  color: #242424;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
 h6 {
-  line-height: 1.3;
-  margin: 0 0 15px;
-  color: #242424;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
-
 $break-small: 767px;
 
 /*==============================================
@@ -304,14 +345,14 @@ hr {
   border-color: #e5e5e5;  
 }
 .section {
-    padding: 60px 0 70px;
-    overflow: hidden;
+  padding: 60px 0 70px;
+  overflow: hidden;
 }
 .fullWidth {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
 }
 .blue-bg{
   background:#3a9ac8;
@@ -330,20 +371,83 @@ hr {
   text-align:center;
 }
 .bg-dark {
-    background: #212628;
-    color: #fff;
-    position: relative;
-    z-index: 1;
+  background: #212628;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 .bg-dark:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    background: #212628;
-    opacity: 0.75;
-    height: 100%;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #212628;
+  opacity: 0.75;
+  height: 100%;
+  z-index: -1;
+}
+
+.title-col {
+  margin-bottom: 40px;
+  .section-title {
+    position: relative;
+    padding-bottom: 10px;
+    color: $heading-dark-color;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      margin-left: 6px;
+      width: 35px;
+      height: 2px;
+      background: #3a9ac8;
+      top: 100%;        
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      margin-left: 6px;
+      width: 35px;
+      height: 2px;
+      background: #3a9ac8;
+      top: 100%;
+      left: auto;
+      right: 50%;
+      margin-right: 6px;                        
+    }
+    span {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #3a9ac8;
+        left: 50%;
+        top: 100%;
+        margin-top: -2px;
+        margin-left: 2px;       
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #3a9ac8;
+        top: 100%;
+        margin-top: -2px;
+        margin-left: 2px;
+        left: auto;
+        right: 50%;
+         margin-right: 6px;                
+      } 
+    }
+  }
+  p {
+    margin-top: 40px;
+    font-size: 1.1rem;
+  }    
 }
