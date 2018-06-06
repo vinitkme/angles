@@ -18,10 +18,11 @@
       letter-spacing: 0.02em;
       margin-bottom: 15px;
       transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+      color: $heading-light-dark-color;
     }
     &:after {
       content: '';
-      background: #3a9ac8;
+      background: $bg-secondary-color;
       left: 0;
       right: 0;
       bottom: 0;
